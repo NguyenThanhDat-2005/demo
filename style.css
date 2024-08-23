@@ -1,4 +1,14 @@
-/* author - deepak tiwari */
+/* # {
+  z-index: 10;
+  position: absolute;
+  transition: all 0.3s;
+} */
+
+#move-random {
+  z-index: 10;
+  position: absolute;
+  transition: all 0.3s;
+}
 * {
     margin: 0;
     padding: 0;
