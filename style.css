@@ -12,7 +12,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffe5e5;
+    background-color: #ffc4cd;
   }
   
   .container {
@@ -36,8 +36,8 @@
   
   .btn a {
     text-decoration: none;
-    color: #111;
-    background: #fff;
+    color: black;
+    background: white;
     padding: 10px 25px;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
