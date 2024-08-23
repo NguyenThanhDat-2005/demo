@@ -5,8 +5,6 @@
 } */
 
 #move-random {
-  z-index: 10;
-  position: absolute;
   transition: all 0.3s;
 }
 * {
