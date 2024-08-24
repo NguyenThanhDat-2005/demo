@@ -40,8 +40,33 @@
     text-decoration: none;
     color: black;
     background: white;
+    text-align: center;
     padding: 10px 25px;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
   }
+
+.btn a#yes {
+  transition: all 0.5s ease;
+}
+
+.btn a#yes.grow {
+  transform: scale(1.5); /* Làm to nút "Có" lên 1.5 lần */
+}
+
+.btn a#yes.blink {
+    animation: blink 1s infinite; /* Hiệu ứng nhấp nháy liên tục */
+}
+
+@keyframes blink {
+    0% { background-color: red; }
+    25% { background-color: yellow; }
+    50% { background-color: green; }
+    75% { background-color: blue; }
+    100% { background-color: red; }
+}
+
+.fade-out {
+    opacity: 0;
+}
 
