@@ -45,11 +45,3 @@ moveRandom.addEventListener("mouseenter", function (e) {
 moveRandom.addEventListener("click", function (e) {
     moveRandomEl(e.target);
 });
-
-// Lấy phần tử nút
-const button = document.getElementById('clickableButton');
-
-// Thêm sự kiện click vào nút
-button.addEventListener('click', function() {
-    alert('Bạn đã nhấp vào nút!');
-});
