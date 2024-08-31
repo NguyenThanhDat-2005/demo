@@ -2,7 +2,6 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Máy tính</title>
 </head>
@@ -29,34 +28,6 @@
 
     <script>
         function calculate() {
-            // Lấy giá trị từ các ô nhập liệu và ô kéo thả
-            var firstNumber = parseFloat(document.getElementById("firstNumber").value);
-            var secondNumber = parseFloat(document.getElementById("secondNumber").value);
-            var operator = document.getElementById("operatorDropdown").value;
-
-            // Biến kết quả
-            var result;
-
-            // Tính toán theo toán tử
-            switch (operator) {
-                case '+':
-                    result = firstNumber + secondNumber;
-                    break;
-                case '-':
-                    result = firstNumber - secondNumber;
-                    break;
-                case '*':
-                    result = firstNumber * secondNumber;
-                    break;
-                case '/':
-                    result = firstNumber / secondNumber;
-                    break;
-                default:
-                    result = "Toán tử không hợp lệ";
-            }
-
-            // Hiển thị kết quả
-            //alert("Kết quả: " + result);
             alert("Xin chào thế giới");
         }
     </script>
