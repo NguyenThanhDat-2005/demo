@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tính</title>
+</head>
+<body>
+    <h1>Máy tính</h1>
+    
+
+    <input type="text" id="firstNumber" placeholder="Nhập số thứ 1">
+    <br><br>
+
+
+    <select id="operatorDropdown">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <br><br>
+
+    <input type="text" id="secondNumber" placeholder="Nhập số thứ 2">
+    <br><br>
+
+    <button onclick="calculate()">=</button>
+
+    <script>
+        function calculate() {
+            // Lấy giá trị từ các ô nhập liệu và ô kéo thả
+            var firstNumber = parseFloat(document.getElementById("firstNumber").value);
+            var secondNumber = parseFloat(document.getElementById("secondNumber").value);
+            var operator = document.getElementById("operatorDropdown").value;
+
+            // Biến kết quả
+            var result;
+
+            // Tính toán theo toán tử
+            switch (operator) {
+                case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;
+                default:
+                    result = "Toán tử không hợp lệ";
+            }
+
+            // Hiển thị kết quả
+            //alert("Kết quả: " + result);
+            alert("Xin chào thế giới");
+        }
+    </script>
+</body>
+</html>
